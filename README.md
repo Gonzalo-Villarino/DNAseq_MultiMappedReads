@@ -1,4 +1,4 @@
-### DNAseq_MultiMappedReads
+## DNAseq_MultiMappedReads
 
 ## I. Generate Uniqyly Mapped files -- mapped using bowtie 
      (1) $bowtie -q -S -m 1 -n 2
@@ -7,7 +7,7 @@
      (1) $bowtie -q -S -m 1 -n 2 --un unmapped.fastq, then for those unmapped read: 
      (2) $use bowtie -q -S -a -n 2 using unmapped.fastq as input
 
-## III. 
+## III. Process and comined I and II
      (1) run remove.unmapped.pl to remove unmapped reads from your multi-mapped file:
          $perl remove.unmapped.pl BW_Multi.Mapped_atxr56_8C.sam  -> BW_Multi.Mapped_atxr56_8C.filter.sam 
           (once .filter.sam is done, you may delete the original MULTIMAPPED.sam as it takes too much space)
