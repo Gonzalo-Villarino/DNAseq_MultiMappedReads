@@ -1,4 +1,4 @@
-## DNAseq_MultiMappedReads using bowtie
+## DNAseq: Multi & Uniqly Mapped Reads using bowtie
 
 ## I. Generate Uniqyly Mapped files 
      (1) $bowtie -q -S -m 1 -n 2
