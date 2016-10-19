@@ -1,8 +1,10 @@
 ### DNAseq_MultiMappedReads
-## I. reads must be mapped using bowtie for uniqly mapped (-m 1 -n 2) 
+## I. reads must be mapped using bowtie for uniqly mapped 
+    ## (1) bowtie -q -S -m 1 -n 2
+
 ## II. Then
-    ## (1) bowtie -q -S -m 1 -n 2 --un unmapped.fastq
-    ## (2) use bowtie -q -S -a -n 2 using
+    ## (1) bowtie -q -S -m 1 -n 2 --un unmapped.fastq, then for those unmapped read: 
+    ## (2) use bowtie -q -S -a -n 2 using unmapped.fastq as input
 
 ## III. 
     ## (1) run remove.unmapped.pl to remove unmapped reads from your multi-mapped file:
