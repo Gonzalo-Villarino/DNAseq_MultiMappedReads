@@ -1,9 +1,10 @@
 ## DNAseq: Multi & Uniqly Mapped Reads using bowtie
 
+
 ## I. Generate Uniqyly Mapped files 
      (1) $bowtie -q -S -m 1 -n 2
 
-## II. Then generate Multip Mapped files
+## II. Generate Multip Mapped files
      (1) $bowtie -q -S -m 1 -n 2 --un unmapped.fastq, then for those unmapped read: 
      (2) $use bowtie -q -S -a -n 2 using unmapped.fastq as input
 
