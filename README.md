@@ -2,7 +2,7 @@
 
 
 
-## I. Generate Uniqly & Multi Mapped files
+## I. Generate Uniqly (1) & Multi (2) Mapped files
      (1) $bowtie -q -S -m 1 -n 2 --un unmapped.fastq, then for those unmapped read: 
      (2) $use bowtie -q -S -a -n 2 using unmapped.fastq as input
 
